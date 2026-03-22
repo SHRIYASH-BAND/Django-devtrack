@@ -1,0 +1,19 @@
+[
+    {
+        "id": 1,
+        "title": "Sample Issue",
+        "description": "This is a sample issue for demonstration purposes.",
+        "status": "open",
+        "priority": "critical",
+        "reporter_id": 1
+    },
+    {
+        "id": 2,
+        "title": "Sample Issue Created",
+        "description": "This is a sample issue for demonstration purposes.",
+        "status": "open",
+        "priority": "low",
+        "reporter_id": 1,
+        "created_at": "2026-03-23 01:19:20.173468"
+    }
+]
