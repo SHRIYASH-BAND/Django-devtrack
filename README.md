@@ -11,12 +11,73 @@ Django app to create, view, read, issues / bugs inside a application. Back-end a
 
 
 ## Images
+- Issue created
 ![Issue Crated Diagram](./images/issue_created_img.png)
 
+- Issue Title empty validation 
+![Issue validation Diagram](./images/issue_title_empty.png)
 
+- Get all Reporters
+![Get all Reporters Diagram](./images/get_all_reporters.png)
+
+- Reporter email validation
+![Reporter email validation Diagram](./images/invalid_reporter_email.png)
+
+
+
+# Steps to run project
+- Python version 3.10+
+- Django version 6.0.3 
+
+1. Clone project
+```bash
+git clone https://github.com/SHRIYASH-BAND/Django-devtrack.git
+cd ./Django-devtrack
+```
+2. Create Virtual Environment
+    - Windows
+    ```bash
+    python -m venv venv
+    venv\Scripts\activate
+    ```
+    - Linux/macOS
+    ```bash
+    python3 -m venv venv
+    source venv/bin/activate 
+    ```
+3. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+4. Alternative dependency installation for conda environment.
+
+```bash
+conda env create -f environment.yml
+conda activate task-app
+```
+
+5. Create .env file in Django-devtrack folder.
+```txt
+ISSUE_FILE='<your-directory>\Django-devtrack\data_files\issues.json'
+REPORTER_FILE='<your-directory>\Django-devtrack\data_files\reporters.json'
+```
+6. Run project
+```bash
+python manage.py runserver
+```
 
 
 # Commands
+
+- allow scripts to run on powershell for current session only.
+    ```bash
+    Set-ExecutionPolicy Bypass -Scope Process
+    ```
+
+- run project
+    ```bash
+    python manage.py runserver
+    ```
 
 - create django project named 'devtrack'
     ```bash 
@@ -31,14 +92,4 @@ Django app to create, view, read, issues / bugs inside a application. Back-end a
 
     ```bash
     django-admin startapp issues
-    ```
-
-- run project
-    ```bash
-    python manage.py runserver
-    ```
-
-- allow scripts to run on powershell for current session only.
-    ```bash
-    Set-ExecutionPolicy Bypass -Scope Process
     ```
