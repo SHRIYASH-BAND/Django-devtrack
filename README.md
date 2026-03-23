@@ -23,7 +23,7 @@ Django app to create, view, read, issues / bugs inside a application. Back-end a
 - Reporter email validation
 ![Reporter email validation Diagram](./images/invalid_reporter_email.png)
 
-
+- many more images under "images/" folder
 
 # Steps to run project
 - Python version 3.10+
@@ -56,7 +56,7 @@ conda env create -f environment.yml
 conda activate task-app
 ```
 
-5. Create .env file in Django-devtrack folder.
+5. Create .env file in Django-devtrack folder. Add below variables values
 ```txt
 ISSUE_FILE='<your-directory>\Django-devtrack\data_files\issues.json'
 REPORTER_FILE='<your-directory>\Django-devtrack\data_files\reporters.json'
