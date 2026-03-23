@@ -1,1 +1,14 @@
-[]
+[
+    {
+        "id": 1,
+        "name": "sarthak",
+        "email": "sarthak@goggle.in",
+        "team": "sinhagad"
+    },
+    {
+        "id": 2,
+        "name": "umesh",
+        "email": "sarthak@goggle.in",
+        "team": "bharat_forge"
+    }
+]

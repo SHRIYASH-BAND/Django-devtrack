@@ -31,7 +31,7 @@ class Reporter(BaseEntity):
         if '@' not in self.email:
             raise ValueError("Reporter email must be valid.")
         if '.com' not in self.email and '.in' not in self.email:
-            raise ValueError("Email with only a .com or .in domain is allowed.")
+            raise ValueError("Email with only .com or .in domain is allowed.")
         if not self.team:
             raise ValueError("Reporter team cannot be empty.")
 
